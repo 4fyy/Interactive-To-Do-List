@@ -46,12 +46,12 @@ h1 {
 }
 
 .container input {
-    width: 230px;
-    height: 30px;
+    width: 14vw;
+    height: 4vh;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 5px 10px;
-    font-size: 14px;
+    font-size: 0.875rem;
     box-sizing: border-box;
     outline: none;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
@@ -67,8 +67,8 @@ h1 {
 }
 
 .container .add button {
-    width: 50px;
-    height: 30px;
+    width: 3vw;
+    height: 4vh;
     background-color: var(--blue3);
     padding: 5px 10px;
     border: 1px solid var(--blue3);
@@ -81,6 +81,23 @@ h1 {
     background-color: var(--blue2);
     border: 1px solid var(--blue2);
     cursor: pointer;
+}
+
+@media all and (max-width: 768px) {
+    .container .add {
+        display: block;
+    }
+
+    .container input {
+        width: 60vw;
+        height: 4vh;
+        margin-bottom: 16px;
+    }
+
+    .container .add button {
+        width: 10vw;
+        height: 3vh;
+    }
 }
 
 hr {
@@ -118,7 +135,7 @@ hr {
 }
 
 .task .description {
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .task .icons {
@@ -127,7 +144,7 @@ hr {
 }
 
 .task .icons i {
-    font-size: 20px;
+    font-size: 1.25rem;
     transition: .3s;
 }
 
